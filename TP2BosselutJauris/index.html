@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Un jeu type candy crush version 1</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="lib/lodash.js"></script>
+    <script type="module" src="js/script.js"></script>
+</head>
+
+<body>
+    <H1>Jeu type candy crush... version avec utilisation de divs</H1>
+    <div id="main">
+        <div id="infos">
+            <div id="temps">Temps : 0</div>
+            <div id="score">Score : 0</div>
+            <div>niveau : 0</div>
+        </div>
+        <div id="grille">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <script>
+        // Fonction pour mettre à jour le compteur de temps chaque seconde
+        function updateTimer() {
+            let timerElement = document.getElementById("temps");
+            let temps = 0;
+
+            setInterval(function () {
+                temps++;
+                timerElement.textContent = "Temps : " + temps + " secondes";
+            }, 1000); // Mettre à jour toutes les secondes
+        }
+
+        // Appel de la fonction pour démarrer le timer
+        updateTimer();
+
+        let score = 0;
+    </script>
+</body>
+</html>
